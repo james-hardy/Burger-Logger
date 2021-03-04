@@ -108,11 +108,11 @@ Having an active and healthy commit history on GitHub is important for your futu
 
    * In the `orm.js` file, create the methods that will execute the necessary MySQL commands in the controllers. These are the methods you will need to use in order to retrieve and store data in your database.
 
-     * `selectAll()`
-     * `insertOne()`
-     * `updateOne()`
+     [ X ] * `selectAll()`
+     [ X ] * `insertOne()`
+     [ X ] * `updateOne()`
 
-   * Export the ORM object in `module.exports`.
+   [ X ] * Export the ORM object in `module.exports`.
 
 #### Model setup
 
@@ -122,9 +122,9 @@ Having an active and healthy commit history on GitHub is important for your futu
 
     [ X ] * Inside `burger.js`, import `orm.js` into `burger.js`
 
-    * Also inside `burger.js`, create the code that will call the ORM functions using burger specific input for the ORM.
+    [ X ] * Also inside `burger.js`, create the code that will call the ORM functions using burger specific input for the ORM.
 
-    * Export at the end of the `burger.js` file.
+    [ X ] * Export at the end of the `burger.js` file.
 
 #### Controller setup
 
@@ -135,9 +135,9 @@ Having an active and healthy commit history on GitHub is important for your futu
 3. Inside the `burgers_controller.js` file, import the following:
 
    [ X ] * Express
-   * `burger.js`
+   [ X ] * `burger.js`
 
-4. Create the `router` for the app, and export the `router` at the end of your file.
+4. [ X ] Create the `router` for the app, and export the `router` at the end of your file.
 
 #### View setup
 

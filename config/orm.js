@@ -1,5 +1,4 @@
-const { create } = require('express-handlebars');
-const { update } = require('../../../13-MVC/01-Activities/17-CatsApp/Solved/config/orm');
+
 const connection = require('./connection');
 
 //injection of one question marks in the sql query 
