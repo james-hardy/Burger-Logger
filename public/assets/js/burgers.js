@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     };
 
    
-    const changeDevourBtns = document.querySelectorAll('.DevourBtn');
+    const changeDevourBtns = document.getElementById('#ate');
 
     if (changeDevourBtns) {
         changeDevourBtns.forEach((button) => {
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     //post burger to devour
-    const createBurgerBtn = document.getElementById('create-form');
+    const createBurgerBtn = document.getElementById('#try');
 
     if (createBurgerBtn) {
         createBurgerBtn.addEventListener('submit', (e) => {
