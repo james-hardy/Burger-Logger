@@ -1,11 +1,11 @@
 <h1>Burgers</h1>
 
-{{!-- <h2>Burgers That I Want to Devour</h2> --}}
+<h2>Burgers That I Want to Devour</h2>
 
 <ul>
     {{#each burgers}}
     {{#unless devoured}}
-    {{!--{{> burgers/burger-block=true--}} 
+    <div> {{this.burger_name}} </div>
     {{/unless}}
     {{/each}}
 </ul>
@@ -15,7 +15,7 @@
 <ul>
     {{#each burgers}}
     {{#if devoured}}
-    {{!--{{> burgers/burger-block=false--}}
+    <div>{{this.burger_name}}</div>
     {{/if}}
     {{/each}}
 </ul>
