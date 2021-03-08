@@ -1,2 +1,24 @@
-h1 {color:blue};
-body {text-align: center};
+h1 {
+    color: darkgreen;
+    /* background-color: lightgrey; */
+};
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+body {
+    text-align: center;
+    background-color: lightgreen;
+    padding-bottom: 70px;
+    padding-top: 20px;
+};
+
+h2 {
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
