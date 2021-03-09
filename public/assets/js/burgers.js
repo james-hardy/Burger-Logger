@@ -4,18 +4,27 @@ document.addEventListener('DOMContentLoaded', (event) => {
     };
 
    
-    const changeDevourBtns = document.getElementById('#ate');
+    const changeDevourBtns = document.getElementById('ate');
+    console.log(changeDevourBtns);
 
     if (changeDevourBtns) {
+        //build this as a submit even make a form. remove the if. give form an id
+        //add event listener of submit on button id ate - run a fucntion 
+        //add from in htlm and give form an id
+        //get element by id and call the id of the form
+        //add event listener
+        //submit
+        //second argunemnt is function with line 28 and on. google on submit event
         changeDevourBtns.forEach((button) => {
             button.addEventListener('click', (e) => {
-                const id = e.target.getAttribute('data-id');
+                const id = e.target.getElementById('burgerid').value;
+                console.log(id);
                 const newDevour = e.target.getAttribute('data-newdevour');
 
                 const newDevourState = {
                     devour: newDevour,
                 };
-
+                //this is the function to run anytime a button is clicked 
                 fetch(`/api/burgers/${id}`, {
                     method: 'PUT',
                     headers: {
@@ -36,15 +45,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     //post burger to devour
-    const createBurgerBtn = document.getElementById('#try');
+    const createBurgerBtn = document.getElementById('create-form');
 
     if (createBurgerBtn) {
         createBurgerBtn.addEventListener('submit', (e) => {
             e.preventDefault();
+            console.log("this worked");
 
             const newBurger = {
-                name: document.getElementById('bu').value.trim(),
-                devour: document.getElementById('devoured').checked,
+                burger_name: document.getElementById('ca').value.trim(),
+                devour: document.getElementById('devoured'),
             };
 
             fetch('/api/burgers', {
@@ -56,7 +66,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
                 body:JSON.stringify(newBurger),
             }).then(() => {
-                document.getElementById('bu').value = '';
+                document.getElementById('ca').value = '';
                 console.log("Created a new burger");
                 location.reload();
             });
