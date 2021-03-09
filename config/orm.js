@@ -1,4 +1,3 @@
-
 const connection = require('./connection');
 
 //injection of one question marks in the sql query 
@@ -94,4 +93,3 @@ const orm = {
 
 
 module.exports = orm;
-
