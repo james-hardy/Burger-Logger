@@ -1,4 +1,4 @@
-const connection = require('./connection');
+const connection = require('./connection.js');
 
 //injection of one question marks in the sql query 
 const printQuestionMarks = (num) => {

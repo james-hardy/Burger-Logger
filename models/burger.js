@@ -1,4 +1,4 @@
-const orm = require('../config/orm');
+const orm = require('../config/orm.js');
 
 //build out models - look at cat activities in the model folder
 const burger = {
