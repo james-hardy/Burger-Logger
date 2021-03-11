@@ -19,6 +19,7 @@
             {{#unless devoured}}
             <div class="burgersdevoured">
                 <div class="col-12"> {{this.burger_name}}</div>
+                <button type="Submit" class="change-devoured" id="ate" data-id={{this.id}} >Eat It!</button>
             </div>
             {{/unless}}
             {{/each}}
